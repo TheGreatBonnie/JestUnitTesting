@@ -3,8 +3,8 @@ const { until } = require('selenium-webdriver');
 const { By } = require('selenium-webdriver');
 const LambdaTestRestClient = require('@lambdatest/node-rest-client');
 
-const username = process.env.LT_USERNAME || 'himanshujlambdatest';
-const accessKey = process.env.LT_ACCESS_KEY || '7A6pDWfFCavmJajP7466YAnCaH5pndMtfG0TnsSbfaPzUeJmu3';
+const username = process.env.LT_USERNAME || 'Your Username';
+const accessKey = process.env.LT_ACCESS_KEY || 'Your Access Key';
 
 const AutomationClient = LambdaTestRestClient.AutomationClient({
     username,
@@ -15,8 +15,8 @@ const capabilities = {
     "browserName": "Chrome",
 	"browserVersion": "105.0",
 	"LT:Options": {
-		"username": "himanshujlambdatest",
-		"accessKey": "7A6pDWfFCavmJajP7466YAnCaH5pndMtfG0TnsSbfaPzUeJmu3",
+		"username": "Your Username",
+		"accessKey": "Your Access Key",
 		"platformName": "Windows 10",
 		"project": "Untitled",
 		"selenium_version": "4.0.0",
